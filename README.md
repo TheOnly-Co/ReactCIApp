@@ -1,6 +1,6 @@
 # React_CircleCI
 
-[![CircleCI](https://circleci.com/gh/TheOnly-Co/ReactCIApp/master.shield?style=shield)](https://app.circleci.com/pipelines/github/TheOnly-Co/ReactCIApp?branch=master)
+[![CircleCI](https://circleci.com/gh/TheOnly-Co/ReactCIApp/.shield?style=shield)](https://circleci.com/gh/TheOnly-Co/ReactCIApp)
 
 ## Architecture
    
