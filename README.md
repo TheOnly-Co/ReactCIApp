@@ -1,5 +1,4 @@
 # React_CircleCI
-
 [![CircleCI](https://circleci.com/gh/TheOnly-Co/ReactCIApp.svg?style=shield)](https://circleci.com/gh/TheOnly-Co/ReactCIApp)
 
 ## Architecture
