@@ -1,7 +1,20 @@
-version: 2.1
-orbs:
-  node: circleci/node@3.0.0
+jobs:
+  build_deploy:
+    machine:
+      image: ubuntu:latest
+    steps:
+      - checkout
+      - run:
+          name: Installing AWS CLI
+          commands: |
+            sudo apt-get update
+            sudo apt install python3-pip
+            sudo pip3 install awsebcli --upgrade
+      - run: cd ./test && npm install && npm run build
+      - run: aws s3 sync ./test/build s3://react-circleci
 workflows:
-  node-tests:
+  version: 2
+  execute_bulk:
     jobs:
-      - node/test
+      - build_deploy 
+
