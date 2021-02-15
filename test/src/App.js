@@ -3,7 +3,7 @@ import './App.css';
 class App extends Component{
   constructor(props){
     super(props)
-    this.state ={
+    this.state = {
       name: "Test App",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTJuvquCwL7eCHn45YEYven_6f4sTStbXMw&usqp=CAU"
     }
