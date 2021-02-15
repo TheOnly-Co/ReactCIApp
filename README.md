@@ -11,5 +11,3 @@
    
    - Dockerize application
    - Deploy via K8s
-
-7533b2e46c819ff7fcff3b04ebf27e739614d2ce
