@@ -13,6 +13,7 @@ class App extends Component{
       <>
       <div className="App">
         <h1>Welcome, This is {this.state.name} !</h1>
+        <p> I am tired </p>
         <img src= {this.state.img} alt="" width="500" height="600"/>
       </div>
       </>
