@@ -1,6 +1,6 @@
 FROM node:14.0.0 as build
 
-LABEL author="Mit Chang"
+LABEL author="Mitch Chang"
 
 WORKDIR /app
 
