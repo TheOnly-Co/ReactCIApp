@@ -29,7 +29,7 @@ jobs:
             set -x
             VER="19.03.13-ce"
             curl -L -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz
-            tar xzf /tmp/docker-$VER.html
+            tar -xzf /tmp/docker-$VER.html
             mv /tmp/docker/* /usr/bin
       - run: 
           name: build push
