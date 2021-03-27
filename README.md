@@ -9,8 +9,8 @@
 
 ## Roadmap
    
-   - Dockerize application
-   - Deploy via K8s
+   [x] Dockerize application
+   [x] Deploy via K8s
 
 ## Link 
 
