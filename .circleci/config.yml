@@ -40,5 +40,5 @@ workflows:
   execute_bulk:
     jobs:
       - build_deploy 
-#      - docker_setup
+      - docker_setup
 
