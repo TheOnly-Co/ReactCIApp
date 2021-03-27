@@ -1,0 +1,44 @@
+jobs:
+  build_deploy:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - run:
+          name: Installing AWS CLI
+          command: |
+            sudo apt-get update
+            sudo apt install python3-pip
+            sudo pip3 install awsebcli --upgrade
+      - run: cd ./test && npm install && npm run build
+      - run: aws s3 sync ./test/build s3://react-circleci
+#   docker_setup:
+#     docker:
+#       - image: cimg/node:14.0.0
+#     working_directory: /app
+#     steps:
+#       - checkout
+#       - setup_remote_docker:
+#           docker_layer_caching: true
+#       - run: 
+#           name: Install Docker Client
+#           command: |
+#             set -x
+#             VER="19.03.13-ce"
+#             curl -L -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz
+#             tar -xz -C /tmp -f /tmp/docker-$VER.tgz
+#             mv /tmp/docker/* /usr/bin
+#       - run: 
+#           name: build push
+#           command: |
+#             TAG=0.1.$CIRCLE_BUILD_NUM
+#             docker build -t 0857/reactcircle:latest .
+#             docker login -u $DOCKER_USER -p $DOCKER_PASS
+#             docker push 0857/reactcircle:latest
+workflows:
+  version: 2
+  execute_bulk:
+    jobs:
+      - build_deploy 
+#      - docker_setup
+
