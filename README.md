@@ -1,6 +1,5 @@
 # ReactCIApp
 [![CircleCI](https://circleci.com/gh/TheOnly-Co/ReactCIApp.svg?style=shield&circle-token=7533b2e46c819ff7fcff3b04ebf27e739614d2ce)](https://circleci.com/gh/TheOnly-Co/ReactCIApp)
-
 ## Architecture
    
    - S3
