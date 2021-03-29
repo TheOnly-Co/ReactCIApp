@@ -13,7 +13,7 @@ class App extends Component{
     return (
       <>
       <div className="App">
-        <h1>Welcome, This is {this.state.name} !</h1>
+        <h1>Welcome, This is {this.state.name}!</h1>
         <p> Below anime is {this.state.anime}! </p>
         <img src= {this.state.img} alt="" width="500" height="600"/>
       </div>
