@@ -5,7 +5,7 @@ class App extends Component{
     super(props)
     this.state = {
       name: "store App",
-      anime: "Full metal Alchemist",
+      anime: "Full Metal Alchemist",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTJuvquCwL7eCHn45YEYven_6f4sTStbXMw&usqp=CAU"
     }
   }
