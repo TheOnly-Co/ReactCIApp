@@ -5,6 +5,7 @@
    - S3
    - ReactJS
    - CircleCI
+   - Jira
 
 ## Roadmap
    
